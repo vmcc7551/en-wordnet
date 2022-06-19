@@ -1,0 +1,12 @@
+const wordnet = require('en-wordnet')
+const Dictionary = require('./index')
+ 
+const start = async () => {
+  const dictionary = new Dictionary(wordnet['3.0'])
+  await dictionary.init()
+ 
+  const result = dictionary.searchFor('yet')
+}
+start()
+
+let result = dict.searchSimpleFor('hello');
